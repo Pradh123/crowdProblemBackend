@@ -31,7 +31,7 @@ app.use('/api/problems', problemRoutes);
 app.use('/api/solutions', solutionRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/admin', adminRoutes);
-app.get("/test",(res,res)=>{
+app.get("/test",(req,res)=>{
   res.send("api is working")
 })
 // Error handling
