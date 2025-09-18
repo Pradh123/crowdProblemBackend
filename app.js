@@ -42,7 +42,7 @@ app.get("/test",(req,res)=>{
 app.use(errorHandler);
 
 // Database connection
-mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect("mongodb+srv://vermapradhumn32_db_user:crowd@crowd.5txzhg3.mongodb.net/?retryWrites=true&w=majority&appName=crowd", { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => console.log('MongoDB connected'))
   .catch(err => console.error('MongoDB connection error:', err));
 
